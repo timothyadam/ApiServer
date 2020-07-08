@@ -26,7 +26,7 @@ class Configuration():
         try:
             self.config_file_path = config_file_path
             self.conf = configparser.ConfigParser()
-            self.conf.read(config_file_path)
+            self.conf.read(config_file_path,encoding='utf-8')
         except Exception as e:
             # 文件不存在或者读取失败
             print(str(e))
