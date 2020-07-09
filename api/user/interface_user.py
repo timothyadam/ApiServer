@@ -8,6 +8,6 @@ class interfaceUser(Resource):
 
    def get(self):
        try:
-          return user_mgr.get_all_user()
+          return user_mgr.get_user_by_name('super')
        except Exception as e:
            lg.error(e)

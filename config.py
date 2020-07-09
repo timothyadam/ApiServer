@@ -145,7 +145,7 @@ class Config(object):
 
 class DevelopmentConfig(Config):
     DEBUG = True
-    DB_CONFIG = {'host': '127.0.0.1', 'port': 3306, 'user': 'root', 'password': 'root', 'db': 'data',
+    DB_CONFIG = {'host': '127.0.0.1', 'port': 3306, 'user': 'root', 'password': 'root', 'db': 'db',
                  'connect_timeout': 300, 'read_timeout': 300, 'write_timeout': 300,
                  'charset': 'utf8'}
     pass
